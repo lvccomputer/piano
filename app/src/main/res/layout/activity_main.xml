@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#C44040">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/btnPlay"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutBar">
+
+        <Button
+            android:id="@+id/lalung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lạ Lùng"
+
+            />
+
+        <Button
+            android:id="@+id/faded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lalung"
+            android:text="Faded"
+
+            />
+
+        <Button
+            android:id="@+id/got"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/faded"
+            android:text="Got"
+
+            />
+
+        <Button
+            android:id="@+id/perfect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/got"
+            android:text="Perfect"
+
+            />
+
+        <Button
+            android:id="@+id/canon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/perfect"
+            android:text="Canon in D"
+
+            />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPlay" />
+
+    <FrameLayout
+        android:id="@+id/pianoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
